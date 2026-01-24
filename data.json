@@ -1,0 +1,255 @@
+{
+  "colleges": [
+    {
+      "id": "iter",
+      "name": "ITER (SOA University)",
+      "semesters": [
+        {
+          "id": "sem_1",
+          "name": "1st Semester",
+          "url": "https://drive.google.com/drive/folders/1m6NZgQkmMtrbK9AYBlDbRiqiHY6lDGEM?usp=drive_link",
+          "subjects": [
+            {
+              "name": "University Physics: Mechanics (UPM)",
+              "url": "https://drive.google.com/drive/folders/1m6NZgQkmMtrbK9AYBlDbRiqiHY6lDGEM?usp=drive_link",
+              "categories": [
+                { "name": "UPM PYQ", "url": "https://drive.google.com/drive/folders/1-ZGVX4Rw-sS30Tes8GKLVgtdKE8_0MO7?usp=drive_link" },
+                { "name": "UPM Notes", "url": "https://drive.google.com/drive/folders/1E33WBOAn1jo0OHy0NeJjoyzHzK_lQEHN?usp=drive_link" },
+                { "name": "UPM Assignments", "url": "https://drive.google.com/drive/folders/1tQcgi1WWuCV9jVFoCUmGtIX1grQlTqrL?usp=drive_link" }
+              ]
+            },
+            {
+              "name": "Calculus A (CALC A)",
+              "url":"https://drive.google.com/drive/folders/1OJbVCG3aYQZyvQ4SuNJvnE687BXGqC5c?usp=drive_link"
+              
+            },
+            {
+              "name": "Universal Human Values (UHV)",
+              "url":"https://drive.google.com/drive/folders/1Z9m52wqD0or3tVdNyfbMqsHzacXwqAV0?usp=drive_link"
+              
+            },
+            {
+              "name": "Discrete Mathematics (DM)",
+              "url":"https://drive.google.com/drive/folders/1k6gnGX_fkC2YUK6lkCCvQu6LrU6qWmgA?usp=drive_link"
+              
+            },
+            {
+              "name": "Introduction to Computer Programming (ICP)",
+              "url":"https://drive.google.com/drive/folders/1ldE5fn6PXG33n4_868ljGwjTVXPX1IcD?usp=drive_link"
+              
+            }
+          ]
+        },
+        {
+          "id": "sem_2",
+          "name": "2nd Semester",
+          "url": "https://drive.google.com/drive/folders/1fBDHRec75ezz0rII3r0hedcvcpM8exYK?usp=drive_link",
+          "subjects": [
+            {
+              "name": "(UPEM) University Physics: Electricity and Magnetism",
+              "url": "https://drive.google.com/drive/folders/16cvvn4PJAbq9pMYl3vTzucoFqx4Snszc?usp=drive_link"
+            },
+            {
+              "name": "(CALC B) Calculus B",
+              "url":"https://drive.google.com/drive/folders/1SleN-LEdAlYrZprd_gkZTNfCfP7nTAYv?usp=drive_link"
+              
+            },
+            {
+              "name": "(ITW) Introductory Technical Writing",
+              "url":"https://drive.google.com/drive/folders/19vF-iGQsDLEEoHDG24yjAI8iAEdaABS4?usp=drive_link"
+              
+            },
+            {
+              "name": "(DSA) Data Structures and Algorithm",
+              "url":"https://drive.google.com/drive/folders/1f2TBDKi2C4LMyzN-fzqqQPqY4caEzJDl?usp=drive_link"
+              
+            },
+            {
+              "name": "(IGT) Introduction to Graph Theory",
+              "url":"https://drive.google.com/drive/folders/1bAGRkPDGM1qVFROKCnB9Kl4_UzVt6YSB?usp=drive_link"
+              
+            },
+            {
+              "name": "(IKS) Concepts of Indian Knowledge System",
+              "url":"https://drive.google.com/drive/folders/1ujXLF1WspPIC79j6JKop61vmOokbjFDK?usp=drive_link"
+              
+            },
+            {
+              "name": "PYQs 2nd Semester All Subjects",
+              "url":"https://drive.google.com/drive/folders/1dawmnDkDuLLavNUnCpBsPJJDdJ0MOy7J?usp=drive_link"
+              
+            }
+          ]
+        },
+        {
+          "id": "sem_3",
+          "name": "3rd Semester",
+          "url": "https://drive.google.com/drive/folders/1aH_TTS8PzLLF8p0RO39I4BHZ-pg4VcZn?usp=drive_link",
+          "subjects": [
+            {
+              "name": "(PS) Probability and Statistics",
+              "url": "https://drive.google.com/drive/folders/18RF0GO78MIZqTrvWYbMFB68ZNjeU7-44?usp=drive_link"
+            },
+            {
+              "name": "(IM) Introduction to Microeconomics",
+              "url":"https://drive.google.com/drive/folders/1GcY1alpBIddDuR7IKXoECRhtfVzIdBfL?usp=drive_link"
+              
+            },
+            {
+              "name": "(DLD) Digital Logic Design",
+              "url":"https://drive.google.com/drive/folders/1EAyiLENw8sTYBJqbnNZclCCgO-hJ_CVO?usp=drive_link"
+              
+            },
+            {
+              "name": "(AD1) Algorithms Analysis and Design 1",
+              "url":"https://drive.google.com/drive/folders/14hr8B0IJ6_KZV_3V_2w3NBY12IHmWBI3?usp=drive_link"
+              
+            },
+            {
+              "name": "(CSW1) Computer Science Workshop 1",
+              "url":"https://drive.google.com/drive/folders/17-6rXccKJ2A3DEYodga910CZUWLRtEEg?usp=drive_link"
+              
+            },
+            {
+              "name": "(IES) Introduction to Environmental Studies",
+              "url":"https://drive.google.com/drive/folders/10zHTOAXfEPPr3uJYLf5Pxocp8dGaZ0ka?usp=drive_link"
+              
+            },
+            {
+              "name": "PYQs 3rd Semester All Subjects",
+              "url":"https://drive.google.com/drive/folders/1DGIs0ssdruJd1mAlv5ZcO8DPbtodmUEq?usp=drive_link"
+              
+            }
+          ]
+        },
+        {
+          "id": "sem_4",
+          "name": "4th Semester",
+          "url": "https://drive.google.com/drive/folders/1D6wN6kRT1x1g84TINC5cXG7cH-IjN3uU?usp=drive_link",
+          "subjects": [
+            
+          ]
+        },
+        {
+          "id": "sem_5",
+          "name": "5th Semester",
+          "url": "https://drive.google.com/drive/folders/1WjEVA_KqnbLN1Lr4O_UnqZJyg24lhZHZ?usp=drive_link",
+          "subjects": [
+            
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIT",
+      "name": "Silicon Institute of Technology",
+      "semesters": [
+        {
+          "id": "sem_1",
+          "name": "1st Semester",
+          "url":"https://sitassanbeta.vercel.app/sithubv2.html"
+
+        },
+        {
+          "id": "sem_2",
+          "name": "2nd Semester",
+          "url":"https://sitassanbeta.vercel.app/sithubv2.html"
+
+        },
+        {
+          "id": "sem_3",
+          "name": "3rd Semester",
+          "url":"https://sitassanbeta.vercel.app/csesem3resources.html"
+        },
+        {
+          "id": "sem_4",
+          "name": "4th Semester",
+          "url":"https://sitassanbeta.vercel.app/csesem4resources.html"
+
+        },
+        {
+          "id": "sem_5",
+          "name": "5th Semester",
+          "url":"https://sitassanbeta.vercel.app/csesem5resources.html"
+        },
+        {
+          "id": "sem_6",
+          "name": "6th Semester",
+          "url":"https://sitassanbeta.vercel.app/csesem6resources.html"
+        },
+        {
+          "id": "sem_7",
+          "name": "7th Semester",
+          "url":"https://sitassanbeta.vercel.app/csesem7resources.html"
+        },
+        {
+          "id": "sem_8",
+          "name": "8th Semester",
+          "url":"https://sitassanbeta.vercel.app/csesem8resources.html"
+        }
+      ]
+    },
+    {
+      "id": "iiit",
+      "name": "International Institute of Information Technology, Bhubaneswar",
+      "semesters": [
+        {
+          "id": "sem_3",
+          "name": "3rd Semester",
+          "url":"https://drive.google.com/drive/u/0/folders/1LuMzgxihc_HLgZTbKwwXqjIztzmOiBW0"
+        },
+        {
+          "id": "sem_4",
+          "name": "4th Semester",
+          "url":"https://drive.google.com/drive/u/0/folders/1FRwwzw8Bs_xgG29GjZBOXYnLTRaiLGqh"
+
+        }
+      ]
+    },
+    {
+      "id": "cgu",
+      "name": "CV Raman Global University",
+      "semesters": [
+        {}
+      ]
+    }
+  ],
+  "team": [
+    { 
+      "name": "Vivek Ranjan Sahoo", 
+      "role": "Founder & Architect", 
+      "college": "ITER", 
+      "branch":"B.Tech CS",
+      "isCore": true,
+      "connectUrl": "https://linkedin.com/in/vivekranjansahoo7",
+      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg?seed=Jocelyn"
+    },
+    { 
+      "name": "Ayush Ranjan Pradhan", 
+      "role": "Database Manager", 
+      "college": "ITER", 
+      "branch":"B.Tech CSIT",
+      "isCore": true,
+      "connectUrl": "https://www.linkedin.com/in/ayush-ranjan-pradhan-008468309/",
+      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg?seed=Amaya"
+    },
+    { 
+      "name": "Alok Raj", 
+      "role": "Lead Contributor", 
+      "college": "Silicon University", 
+      "branch":"B.Tech CS",
+      "isCore": true,
+      "connectUrl": "https://alokrajcse.github.io/Alok/",
+      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg"
+    },
+    { 
+      "name": "Ribhu Dehuri", 
+      "role": "Lead Contributor", 
+      "college": "IIIT BBSR", 
+      "branch":"B.Tech CS",
+      "isCore": true,
+      "connectUrl": "https://www.linkedin.com/in/ribhu-dehuri-2b95b5215/",
+      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg?seed=Nolan"
+    }
+  ]
+}

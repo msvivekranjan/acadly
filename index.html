@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acadly.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo text-logo">
+                Acadly.
+            </a>
+
+            <nav class="header-nav desktop-nav">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#colleges-selection" class="nav-link">Institutes</a>
+                <a href="#features" class="nav-link">Why Us</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                
+                <div class="auth-buttons">
+                    <!-- <a href="#" class="btn btn-outline">Log in</a> -->
+                    <a href="https://forms.gle/Azt8ZUcDreJrkmPq8" class="btn btn-primary">Collab</a>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav-menu" id="mobile-nav-menu">
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="#colleges-selection" class="mobile-link">Institutes</a>
+            <a href="#features" class="mobile-link">Why Us</a>
+            <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <div class="mobile-auth">
+                <!-- <a href="#" class="btn btn-outline">Log in</a> -->
+                <a href="https://forms.gle/Azt8ZUcDreJrkmPq8" class="btn btn-primary">Collab</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id = "hero" class="hero-section">
+            <div class="liquid-shape shape-1"></div>
+            <div class="liquid-shape shape-2"></div>
+            <div class="container hero-content-center">
+                <div class="hero-tag">
+                    <span class="dot">•</span> NEXT-GEN ACADEMIC RESOURCES
+                </div>
+
+                <h1 class="hero-title">
+                    Study Smarter,<br>
+                    <span class="text-gradient">Not Harder.</span>
+                </h1>
+
+                <p class="hero-desc">
+                    The decentralized platform for college students to share, discover, and 
+                    master their curriculum with community-driven notes and study materials.
+                </p>
+
+                <div class="hero-search-wrapper">
+                    <div class="hero-search-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="hero-search-input" placeholder="Search for subjects, books or documents...">
+                    </div>
+                    <div id="search-dropdown" class="search-dropdown hero-dropdown"></div>
+                </div>
+
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <div class="quick-card"><span class="qc-icon">↺</span> Lectures</div>
+                        <div class="quick-card"><span class="qc-icon">▶</span> PYQs </div>
+                        <div class="quick-card"><span class="qc-icon">📖</span> Book PDF</div>
+                        <div class="quick-card"><span class="qc-icon">📝</span> Assignment</div>
+                        <div class="quick-card"><span class="qc-icon">🗒️</span> Notes</div>
+                        <div class="quick-card"><span class="qc-icon">↺</span> Lab Records</div>
+                        <div class="quick-card"><span class="qc-icon">▶</span> Solutions</div>
+                        <div class="quick-card"><span class="qc-icon">📖</span> Quiz Papers</div>
+                        <div class="quick-card"><span class="qc-icon">📝</span> Lesson Plan</div>
+                        <div class="quick-card"><span class="qc-icon">🗒️</span> PPTs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+    <div class="stats-container">
+        
+        <div class="stats-header">
+            <div class="hero-tag">
+                    <span class="dot">•</span> OUR JOURNEY SO FAR
+                </div>
+            <h2>Over 1 million students helped, and counting</h2>
+            <p>50K new study notes added every day, from the world's most active student communities</p>
+        </div>
+
+        <div class="desktop-stats">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>1.4K+</h3>
+                    <div class="stat-label">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </span> 
+                    Study resources
+                </div>
+                    <span class="stat-badge badge-purple"> By 35+ contributors</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>180+</h3>
+                    <div class="stat-label">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </span> 
+                    Subjects
+                </div>
+                    <span class="stat-badge badge-green">Across 4+ Institutes</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>40K+</h3>
+                    <div class="stat-label">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </span> 
+                    Users
+                </div>
+                    <span class="stat-badge badge-orange">Every semester</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-stats">
+            <div class="carousel-window">
+                <div class="stats-track" id="stats-track">
+                    
+                    <div class="stat-slide">
+                        <div class="stat-box mobile-box">
+                            <h3>1.4K+</h3>
+                            <div class="stat-label"><span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </span> Study resources</div>
+                            <span class="stat-badge badge-purple"> By 35+ contributors</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-slide">
+                        <div class="stat-box mobile-box">
+                            <h3>180+</h3>
+                            <div class="stat-label"><span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </span> Subjects</div>
+                            <span class="stat-badge badge-green">Across 4+ Institutes</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-slide">
+                        <div class="stat-box mobile-box">
+                            <h3>40K+</h3>
+                            <div class="stat-label"><span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </span> Users</div>
+                            <span class="stat-badge badge-orange">Every semester</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <section id = "colleges-selection" class="colleges-selection-section">
+            <div class="container">
+                <div class="colleges-header-wrapper">
+                    <div class="colleges-header-text">
+                        <h2>Select your College</h2>
+                        <p>Access tailored resources specific to your institution's curriculum.</p>
+                    </div>
+                    <div class="college-search-container">
+                        <div class="college-search-bar">
+                            <input type="text" id="college-search-input" placeholder="Search college...">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <div id="college-search-results" class="college-results-dropdown"></div>
+                    </div>
+                </div>
+
+                <div id="college-grid" class="featured-colleges-grid">
+                    <div class="college-feature-card">
+                        <div class="c-icon-box c-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <h3>ITER SOA DU</h3>
+                        <p class="c-desc">Premium resources for Computer Science and engineering.</p>
+                        <div class="c-stats">
+                            <span>📄 350+</span>
+                            <span>👥 12+</span>
+                        </div>
+                        <button class="c-explore-btn" onclick="openSemesterView('iter')">Explore Materials</button>
+                    </div>
+
+                    <div class="college-feature-card">
+                        <div class="c-icon-box c-purple">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"/></svg>
+                        </div>
+                        <h3>Silicon University</h3>
+                        <p class="c-desc">Curated learning materials designed for future-ready software innovators.</p>
+                        <div class="c-stats">
+                            <span>📄 500+</span>
+                            <span>👥 7+</span>
+                        </div>
+                        <button class="c-explore-btn" onclick="openSemesterView('SIT')">Explore Materials</button>
+                    </div>
+
+                    <div class="college-feature-card">
+                        <div class="c-icon-box c-pink">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h12"/><path d="M6 9h12"/><path d="M12 3v18"/><path d="M7.5 13.5l4.5 4.5 4.5-4.5"/></svg>
+                        </div>
+                        <h3>IIIT BBSR</h3>
+                        <p class="c-desc">Focused collection of tools for mastering computing concepts.</p>
+                        <div class="c-stats">
+                            <span>📄 460+</span>
+                            <span>👥 5+</span>
+                        </div>
+                        <button class="c-explore-btn" onclick="openSemesterView('iiit')">Explore Materials</button>
+                    </div>
+
+                    <div class="college-feature-card">
+                        <div class="c-icon-box c-teal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 7v14"/><path d="M21 7v14"/><path d="M7 21V7"/><path d="M11 21V7"/><path d="M17 21V7"/><path d="M13 7V3"/><path d="M11 3L3 7"/><path d="M21 7l-8-4"/></svg>
+                        </div>
+                        <h3>CGU Odisha</h3>
+                        <p class="c-desc">Comprehensive learning materials for modern tech learners.</p>
+                        <div class="c-stats">
+                            <span>📄 250+</span>
+                            <span>👥 2+</span>
+                        </div>
+                        <button class="c-explore-btn" onclick="openSemesterView('cgu')">Explore Materials</button>
+                    </div>
+                </div>
+
+                <div class="see-all-container">
+                    <button class="see-all-btn" onclick="toggleCollegeView()">See all colleges</button>
+                </div>
+            </div>
+        </section>
+
+<section id="semester-view" class="semester-view-section" style="display: none;">
+    <div class="container">
+        <div class="semester-header">
+            
+            <div class="breadcrumbs-text">
+                <span class="link" onclick="location.reload()">Home</span> › <span id="college-name-crumb">Select Semester</span>
+            </div>
+            <h1>Choose Your Semester</h1>
+            <p>Access your curated collection of lecture notes, past exams, and community resources tailored for each stage of your degree.</p>
+        </div>
+
+        <div id="semester-grid" class="semester-grid">
+            </div>
+
+        <div class="upload-cta-banner">
+            <div class="upload-cta-content">
+                <h3>Can’t find your resources?</h3>
+                <p>Our community is constantly updating the hub. If you have notes from a previous semester, help your fellow students by uploading them today.</p>
+            </div>
+            <div class="upload-cta-buttons">
+                <a href="https://forms.gle/bbWV2wqrHFeoYZVv6" target="_blank" class="btn-primary-solid">
+                    Upload Notes
+                </a>
+                <a href="mailto:vivek.ncc19@gmail.com?subject=Request Support for Acadly.&body=Hi Vivek, [Type your queries here]" target="_blank" class="btn-secondary-solid">
+                    Request Support
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id = "features" class="features-section">
+    <div class="container">
+        
+        <div class="features-header">
+            <div class="hero-tag">
+                    <span class="dot">•</span> OUR UNIQUENESS
+                </div>
+            <h2>More than just notes</h2>
+            <p>A complete ecosystem designed to help you excel in your academic journey.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="f-icon-box f-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div class="f-card-text">
+                    <h3>Cross-Platform Access</h3>
+                    <p>Study anytime, anywhere. Your progress syncs seamlessly across your laptop, tablet, and phone.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="f-icon-box f-pink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h5l2 3h11v9a2 2 0 0 1-2 2H3z"></path></svg>
+                </div>
+                <div class="f-card-text">
+                    <h3>Smart Organization</h3>
+                    <p>Find what you need in seconds. Everything is neatly structured by semester, subject, and topic, no more endless searching.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="f-icon-box f-teal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+                </div>
+                <div class="f-card-text">
+                    <h3>Verified Resources</h3>
+                    <p>All materials are peer-reviewed and verified for accuracy, ensuring you study from the best.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id = "testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="testimonials-header">
+                    <div class="t-header-left">
+                        <h2>Loved by thousands of students</h2>
+                        <p>Hear from students across various universities who have transformed their grades using Acadly.</p>
+                    </div>
+                    
+                    <div class="t-header-right">
+                        <div class="avatar-group">
+                            <span class="avatar-circle"></span>
+                            <span class="avatar-circle"></span>
+                            <span class="avatar-circle"></span>
+                        </div>
+                        <div class="rating-text">
+                            <strong>4.9/5</strong> Average Rating
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-wrapper">
+        <div class="marquee-track">
+            
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"The PYQs and solutions section literally saved my semester. I could focus on what actually matters instead of wasting time searching."</p>
+                <div class="user-info">
+                    <div class="avatar purple">AA</div>
+                    <div>
+                        <h4>Aryan Agrawal</h4>
+                        <span>ITER, SOA DU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"Sharing my notes and getting recognized by the community feels amazing. The UI makes studying actually enjoyable."</p>
+                <div class="user-info">
+                    <div class="avatar pink">RD</div>
+                    <div>
+                        <h4>Ribhu Dehuri</h4>
+                        <span>IIIT, Bhubaneswar</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"The project archives are a goldmine for anyone looking to build something real. Truly a community-driven powerhouse."</p>
+                <div class="user-info">
+                    <div class="avatar orange">PJ</div>
+                    <div>
+                        <h4>Purbi Jenamani</h4>
+                        <span>Silicon University</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"Finally a platform that doesn't feel like a boring LMS. The interface and resource organization is top tier."</p>
+                <div class="user-info">
+                    <div class="avatar blue">AP</div>
+                    <div>
+                        <h4>Ayush Ranjan Pradhan</h4>
+                        <span>ITER, SOA DU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"The PYQs and solutions section literally saved my semester. I could focus on what actually matters instead of wasting time searching."</p>
+                <div class="user-info">
+                    <div class="avatar purple">AA</div>
+                    <div>
+                        <h4>Aryan Agrawal</h4>
+                        <span>ITER, SOA DU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"Sharing my notes and getting recognized by the community feels amazing. The UI makes studying actually enjoyable."</p>
+                <div class="user-info">
+                    <div class="avatar pink">RD</div>
+                    <div>
+                        <h4>Ribhu Dehuri</h4>
+                        <span>IIIT, Bhubaneswar</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"The project archives are a goldmine for anyone looking to build something real. Truly a community-driven powerhouse."</p>
+                <div class="user-info">
+                    <div class="avatar orange">PJ</div>
+                    <div>
+                        <h4>Purbi Jenamani</h4>
+                        <span>Silicon University</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p>"Finally a platform that doesn't feel like a boring LMS. The interface and resource organization is top tier."</p>
+                <div class="user-info">
+                    <div class="avatar blue">AP</div>
+                    <div>
+                        <h4>Ayush Ranjan Pradhan</h4>
+                        <span>ITER, SOA DU</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <section id = "cta-highlight" class="cta-highlight-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-content-left">
+                        <h2>Can't find your college?</h2>
+                        <p>Be the pioneer! Help us expand the hub by collaborating with us to bring your college's resources online. Build a community, earn rewards, and make an impact.</p>
+                    </div>
+                    <div class="cta-content-right">
+                        <a href="https://forms.gle/bbWV2wqrHFeoYZVv6" target="_blank">
+                            <button class="cta-btn-white">
+                                Collab with us
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <footer class="new-site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-brand">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        Acadly.
+                    </a>
+                    <p class="footer-desc">
+                        A decentralized, open-access academic repository built to preserve knowledge and empower the next generation of students.
+                    </p>
+                    <div class="social-links-row">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" class="social-icon" aria-label="Discord"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Organization</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Mission</a></li>
+                        <li><a href="about.html#team">The Visionaries</a></li>
+                        <li><a href="index.html#features">Why Choose Us</a></li>
+                        <li><a href="index.html#testimonials">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Archives</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://drive.google.com/drive/folders/1rZ3bB5Ozjtfv0RyxlqPw33pDS8LmiPs7?usp=drive_link">ITER Repository</a></li>
+                        <li><a href="https://sitassanbeta.vercel.app/">Silicon Database</a></li>
+                        <li><a href="https://drive.google.com/drive/u/0/folders/154X4RKE2JDL0VKCdlTc2LQFLKVp8aeEU">IIIT Library</a></li>
+                        <li><a href="index.html#colleges-selection">Browse All Institutes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Involvement</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd43KlGQHyydctvnxwIBJHfVCsGlplVSyKVEVeaEqMGzpGHhQ/viewform">Contributor Program</a></li>
+                        <li><a href="https://forms.gle/Azt8ZUcDreJrkmPq8">Partnership Inquiry</a></li>
+                        <li><a href="about.html#team">Hall of Fame</a></li>
+                        <li><a href="mailto:vivek.ncc19@gmail.com">Support & Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
