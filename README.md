@@ -1,110 +1,48 @@
-ACADLY
-Decentralized academic resource aggregator.
-────────────────────────────────────────────────────────
+<div align="center">
 
-v2.1  •  Stable  •  Open Access
+```text
+    _    ____    _    ____  _  __   __
+   / \  / ___|  / \  |  _ \| | \ \ / /
+  / _ \| |     / _ \ | | | | |  \ V / 
+ / ___ \ |___ / ___ \| |_| | |___| |  
+/_/   \_\____/_/   \_\____/|_____|_|  
+                                      
+:: DECENTRALIZED ACADEMIC KNOWLEDGE ENGINE ::
 
+<br /> LIVE PREVIEW  •  DOCUMENTATION  •  REPORT BUG </div>› SYSTEM MANIFESTO"Acadly reduces the friction between students and knowledge. We do not store data; we index it. We do not reload pages; we mutate views. Speed is a feature."Acadly is a client-side, single-page application (SPA) built to aggregate academic resources. It operates without a traditional backend, relying on a relational JSON index to serve thousands of resource links instantly.› VISUAL ARCHITECTUREWe utilize a Virtual View System to manage state without page reloads.Code snippetgraph TD;
+    A[User Entry] --> B{Router Logic};
+    B -- Hash: #home --> C[Home View Container];
+    B -- Hash: #about --> D[About View Container];
+    C --> E[Search Module];
+    C --> F[Stats Engine];
+    D --> G[Team Grid];
+    E -- Input --> H((JSON Index));
+    H -- Query --> I[Dynamic DOM Injection];
+(Note: If Mermaid is not supported in your viewer, see the ASCII fallback below)Plaintext[ USER INPUT ] 
+      │
+      ▼
+[ ROUTER KERNEL ] ───┬─── [ #home ] ───► [ HERO / MARQUEE / SEARCH ]
+      │              │
+      │              └─── [ #about ] ───► [ MISSION / TEAM GRID ]
+      ▼
+[ DATA ENGINE ]
+      │
+      ├─► Fetch: data.json
+      ├─► Build: Relational Index (College > Sem/Sub)
+      └─► Render: Liquid Glass UI
+› CORE CAPABILITIESSYMBOLMODULEDESCRIPTION⚡Zero-Latency SearchIndex builds on load. Queries execute in <50ms local time.🔮Liquid UIComplex CSS backdrop-filters create a dynamic glassmorphism effect.📱Touch PhysicsCustom JS handling for swipe gestures on sliders and carousels.🧬Virtual RoutingSingle index.html file mimics a multi-page site structure.♾️Infinity ScrollCSS/JS hybrid marquees for seamless content looping.› TECH STACKWe stick to the metal. No frameworks. No bloat.HTML5 — Semantic Structure & Virtual DOM ContainersCSS3 — Variables, Grid, Flexbox, & 3D TransformsJavaScript (ES6+) — Async Fetch, Event Delegation, DOM ManipulationJSON — Relational Data Schema› DIRECTORY STRUCTUREA clean architecture for scalable development.Bash📦 ACADLY-V2.1
+ ┣ 📂 assets
+ ┃ ┣ 📂 icons          # SVG System Icons
+ ┃ ┗ 📂 images         # Optimized WebP Assets
+ ┣ 📜 index.html       # The Monolith (View Controller)
+ ┣ 📜 style.css        # The Paint (Glassmorphism Engine)
+ ┣ 📜 script.js        # The Brain (Router & Search)
+ ┣ 📜 data.json        # The Knowledge Base
+ ┗ 📜 README.md        # System Documentation
+› DEPLOYMENT PROTOCOLSince Acadly uses fetch() API calls to load external JSON, it requires a local server environment to bypass CORS restrictions.1. Clone the frequencyBashgit clone [https://github.com/username/acadly-v2.git](https://github.com/username/acadly-v2.git)
+2. Initialize Local ServerBash# Python 3.x
+python3 -m http.server 8000
 
-[ LIVE DEPLOYMENT ]       [ ARCHITECTURE ]       [ CONTRIBUTION ]
-
-
-›  OVERVIEW
-   Acadly is a client-side, single-page resource engine designed to 
-   aggregate and serve academic materials (notes, PYQs, datasets) 
-   without backend dependency. It utilizes a custom virtual routing 
-   system to manage views and state within a static context.
-
-
-›  CORE ARCHITECTURE
-
-   ▪  Client-Side Indexing
-      Search logic runs entirely in the browser. On initialization, 
-      the application fetches `data.json`, builds a relational index 
-      of Colleges > Semesters > Subjects, and executes queries with 
-      zero network latency after load.
-
-   ▪  Liquid Glassmorphism Engine
-      UI rendering utilizes complex CSS logic involving backdrop-filters, 
-      multi-layer mesh gradients, and rgba alpha-blending to create 
-      a "liquid glass" aesthetic that remains performant (60fps) on 
-      mobile devices.
-
-   ▪  Virtual View Router
-      To eliminate page reloads, Acadly uses a lightweight DOM 
-      manipulation script. Navigation events trigger a visibility 
-      toggle between `#home-view` and `#about-view` containers, 
-      preserving state and reducing bandwidth usage.
-
-
-›  TECHNICAL SPECIFICATIONS
-
-   Frontend      ›  HTML5, CSS3 (Variables + Grid), ES6+ JavaScript
-   Data Layer    ›  JSON (Relational Structure)
-   Animation     ›  CSS Keyframes + RequestAnimationFrame Loop
-   Dependencies  ›  None (Vanilla Implementation)
-
-
-›  FILE STRUCTURE
-
-   .
-   ├── index.html        # Single entry point (Home + Virtual Views)
-   ├── script.js         # Router, Search Indexer, DOM Hydration
-   ├── style.css         # Glassmorphism Logic, Responsive Grid
-   ├── data.json         # Centralized Data Repository
-   └── assets/           # SVG Icons, Static Resources
-
-
-›  DATA FLOW
-
-   Initialization
-   └── Fetch `data.json`
-       ├── Populate `appData` global state
-       └── Trigger `buildSearchIndex()`
-
-   Interaction
-   └── User Input (Search/Nav)
-       ├── Filter `searchIndex` array
-       └── Inject HTML into DOM via Template Literals
-
-   Rendering
-   └── CSS Engine
-       ├── Apply `backdrop-filter: blur()`
-       └── Calculate layout (Mobile/Desktop)
-
-
-›  INSTALLATION & DEPLOYMENT
-
-   1. Clone Repository
-      $ git clone https://github.com/username/acadly.git
-
-   2. Local Execution
-      Since Acadly utilizes `fetch()` requests for JSON data, 
-      it requires a local server context to avoid CORS policy 
-      restrictions on file:// protocols.
-
-      $ cd acadly
-      $ python3 -m http.server 8000
-
-   3. Access
-      Navigate to `http://localhost:8000`
-
-
-›  FEATURE MATRIX
-
-   ✓  Universal Search (Colleges, Subjects, Semesters)
-   ✓  Touch-Responsive Sliders (Mobile Swipe Logic)
-   ✓  Infinite Marquee Scrollers (CSS + JS Hybrid)
-   ✓  Dynamic Theme Parsing (JSON-to-DOM)
-   —  User Authentication (Planned v3.0)
-   —  Cloud Database Integration (Planned v3.0)
-
-
-›  CONTRIBUTION GUIDELINES
-
-   1. Fork the repository.
-   2. Modify `data.json` to add new academic nodes.
-   3. Ensure JSON syntax is valid (strict schema).
-   4. Submit Pull Request with the tag [DATA] or [FIX].
-
-────────────────────────────────────────────────────────
-© 2024 Acadly Developers. MIT License.
+# OR via Node.js (http-server)
+npx http-server .
+3. Access InterfaceOpen http://localhost:8000 in your browser.› CONTRIBUTION LOGICWe welcome code that is clean, commented, and performant.Fork the project.Branch for your feature (git checkout -b feature/AmazingFeature).Commit your changes (git commit -m 'Add: New Search Algorithm').Push to the branch (git push origin feature/AmazingFeature).Open a Pull Request.<div align="center">BUILT BY THE ACADLY CORE TEAM<br />Est. 2024 • Open Access • Decentralized</div>
