@@ -200,10 +200,16 @@ document.addEventListener('DOMContentLoaded', () => {
              const titles = ["Orientation Era", "Overconfident Noob", "Reality Hit", "Adapt or Die", "Serious Mode (Fake)", "Panic Programming", "Almost Engineer", "Emotion + Freedom"];
              const numStr = i.toString().padStart(2, '0');
              card.innerHTML = `<div class="sem-number-watermark">${numStr}</div><div class="sem-icon-box ${iconColors[i-1]}">${icons[i-1]}</div><h3>Semester ${i}</h3><p>${exists ? titles[i-1] : 'Coming Soon'}</p>`;
+            // REPLACE THIS SECTION INSIDE openSemesterView function loop:
             if (exists) {
-            card.onclick = () => {
-                window.location.href = semesterData.url;
-            };
+                card.onclick = (e) => {
+                    e.preventDefault(); // Stop immediate redirect
+                    
+                    // Call the loader with a callback function
+                    runSemesterLoader(() => {
+                        window.location.href = semesterData.url;
+                    });
+                };
             }
              else { card.style.opacity = '0.6'; card.style.cursor = 'default'; }
              grid.appendChild(card);
@@ -253,7 +259,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.resetToHome = () => {
         history.back(); // Using history.back() for the UI "Home" button ensures consistency
     };
-    window.openSemesterView = openSemesterView;
 
 
     // --- 4. Breadcrumbs Logic ---
@@ -621,54 +626,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- MULTI-STEP LOADER LOGIC ---
     function runSemesterLoader(onComplete) {
-        const overlay = document.getElementById('semester-loader');
-        const steps = document.querySelectorAll('.step-item');
-        
-        // 1. Show Overlay
-        overlay.style.display = 'flex';
-        // Small delay to allow CSS transition to kick in
-        setTimeout(() => overlay.classList.add('active'), 10);
+    const overlay = document.getElementById('semester-loader');
+    // Ensure we are selecting the correct list items
+    const steps = document.querySelectorAll('.step-item'); 
+    
+    // 1. Show Overlay
+    overlay.style.display = 'flex';
+    setTimeout(() => overlay.classList.add('active'), 10);
 
-        // 2. Reset Steps (in case run previously)
-        steps.forEach(step => {
-            step.classList.remove('active', 'completed');
-        });
+    // 2. Reset Steps
+    steps.forEach(step => {
+        step.classList.remove('active', 'completed');
+    });
 
-        // 3. Animation Sequence
-        let currentStep = 0;
-        const totalSteps = steps.length;
-        const stepDuration = 500; // Time per step (ms)
+    // 3. Animation Sequence
+    let currentStep = 0;
+    const totalSteps = steps.length;
+    const stepDuration = 600; // Increased slightly for better UX (3s total approx)
 
-        function processStep() {
-            if (currentStep < totalSteps) {
-                // Mark current step as Active
-                const stepEl = steps[currentStep];
-                stepEl.classList.add('active');
+    function processStep() {
+        if (currentStep < totalSteps) {
+            const stepEl = steps[currentStep];
+            
+            // Mark Active
+            stepEl.classList.add('active');
 
-                // Wait, then mark as Completed and move to next
+            // Wait, then Mark Complete
+            setTimeout(() => {
+                stepEl.classList.remove('active');
+                stepEl.classList.add('completed');
+                
+                currentStep++;
+                processStep(); 
+            }, stepDuration);
+        } else {
+            // 4. Finished -> Redirect
+            setTimeout(() => {
+                onComplete();
+                
+                // Optional: Clean up after redirect (if user comes back)
                 setTimeout(() => {
-                    stepEl.classList.remove('active');
-                    stepEl.classList.add('completed');
-                    currentStep++;
-                    processStep(); // Recursive call
-                }, stepDuration);
-            } else {
-                // 4. All Steps Done -> Execute the actual Action
-                setTimeout(() => {
-                    onComplete();
-                    
-                    // Optional: Hide loader after redirect starts
-                    // overlay.classList.remove('active');
-                    // setTimeout(() => overlay.style.display = 'none', 300);
-                }, 500);
-            }
+                    overlay.classList.remove('active');
+                    overlay.style.display = 'none';
+                }, 1000);
+            }, 300);
         }
-
-        // Start the sequence
-        processStep();
     }
+
+    processStep();
+}
     
     // --- UPDATED RENDER TEAM FUNCTION ---
     function renderCoreTeam(teamData) {
