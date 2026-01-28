@@ -194,6 +194,17 @@
       "name": "International Institute of Information Technology, Bhubaneswar",
       "semesters": [
         {
+          "id": "sem_1",
+          "name": "1st Semester",
+          "url":"https://drive.google.com/drive/folders/13iflSdlQzXCUIx9jfr9MLQrS80I4Dkns"
+        },
+        {
+          "id": "sem_2",
+          "name": "2nd Semester",
+          "url":"https://drive.google.com/drive/folders/13iflSdlQzXCUIx9jfr9MLQrS80I4Dkns"
+
+        },
+        {
           "id": "sem_3",
           "name": "3rd Semester",
           "url":"https://drive.google.com/drive/u/0/folders/1LuMzgxihc_HLgZTbKwwXqjIztzmOiBW0"
