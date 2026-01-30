@@ -233,7 +233,8 @@
       "branch":"B.Tech CS",
       "isCore": true,
       "connectUrl": "https://linkedin.com/in/vivekranjansahoo7",
-      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg?seed=Jocelyn"
+      "avatarUrl": "https://tapback.co/api/avatar/user10?color=7"
+
     },
     { 
       "name": "Ayush Ranjan Pradhan", 
@@ -242,7 +243,7 @@
       "branch":"B.Tech CSIT",
       "isCore": true,
       "connectUrl": "https://www.linkedin.com/in/ayush-ranjan-pradhan-008468309/",
-      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg?seed=Amaya"
+      "avatarUrl": "https://tapback.co/api/avatar/user60?color=10"
     },
     { 
       "name": "Alok Raj", 
@@ -251,7 +252,7 @@
       "branch":"B.Tech CS",
       "isCore": true,
       "connectUrl": "https://alokrajcse.github.io/Alok/",
-      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg"
+      "avatarUrl": "https://tapback.co/api/avatar/user49?color=3"
     },
     { 
       "name": "Ribhu Dehuri", 
@@ -260,7 +261,7 @@
       "branch":"B.Tech CS",
       "isCore": true,
       "connectUrl": "https://www.linkedin.com/in/ribhu-dehuri-2b95b5215/",
-      "avatarUrl": "https://api.dicebear.com/9.x/identicon/svg?seed=Nolan"
+      "avatarUrl": "https://tapback.co/api/avatar/user16?color=4"
     }
   ]
 }
