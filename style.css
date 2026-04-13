@@ -1,7 +1,7 @@
 /* --- CSS Reset & Variables --- */
 :root {
-    --primary-blue: #a96bf9;
-    --primary-dark: #8c36e7;
+    --primary-blue: #6bc2f9;
+    --primary-dark: #369ae7;
     --text-dark: #1f2937;
     --text-medium: #4b5563;
     --text-light: #9ca3af;
@@ -10,8 +10,8 @@
     --border-color: #e5e7eb;
     
     /* Badge Colors (Light Bg + Dark Text) */
-    --badge-purple-bg: #f3e8ff;
-    --badge-purple-text: #9333ea;
+    --badge-purple-bg: #e8f4ff;
+    --badge-purple-text: #33aaea;
     --badge-green-bg: #ecfdf5;
     --badge-green-text: #059669;
     --badge-orange-bg: #fff7ed;
@@ -41,12 +41,12 @@ html, body {
     position: relative;      /* Helps contain absolute children */
     margin: 0; padding: 0;   /* Reset defaults */
 
-    /* Glassmorphism Background */
-    background-color: #f3f4f6;
-    background-image: 
-        radial-gradient(at 40% 20%, rgba(169, 107, 249, 0.15) 0px, transparent 50%),
-        radial-gradient(at 80% 0%, rgba(100, 220, 255, 0.15) 0px, transparent 50%),
-        radial-gradient(at 0% 50%, rgba(255, 180, 180, 0.12) 0px, transparent 50%);
+    /* Glassmorphism Background (Updated) */
+    background-color: #fcfdfe; /* #LightOffWhite (updated from #f3f4f6) */
+    background-image:
+        radial-gradient(at 40% 20%, rgba(45, 80, 125, 0.15) 0px, transparent 20%), /* #DeepPurple/Indigo */
+        radial-gradient(at 80% 0%, rgba(73, 213, 204, 0.15) 0px, transparent 50%), /* #Cyan/AquaTeal */
+        radial-gradient(at 0% 50%, rgba(58, 117, 195, 0.12) 0px, transparent 50%); /* #MediumBlue */
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -179,13 +179,13 @@ button { font-family: inherit; }
 
 .nav-link:hover {
     color: var(--primary-blue);
-    background: rgba(169, 107, 249, 0.08); /* Very subtle purple tint on hover */
+    background: rgba(107, 152, 249, 0.08); /* Very subtle purple tint on hover */
     transform: translateY(-1px); /* Micro-interaction */
 }
 
 .nav-link.active {
     color: var(--primary-blue);
-    background: rgba(169, 107, 249, 0.08);
+    background: rgba(107, 140, 249, 0.08);
     font-weight: 600;
 }
 
@@ -211,14 +211,14 @@ button { font-family: inherit; }
     color: white;
     border: 1px solid var(--primary-blue);
     /* Add a subtle shadow/glow */
-    box-shadow: 0 4px 14px 0 rgba(169, 107, 249, 0.39);
+    box-shadow: 0 4px 14px 0 rgba(107, 150, 249, 0.39);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     border-color: var(--primary-dark);
     transform: translateY(-2px); /* Lift effect */
-    box-shadow: 0 6px 20px rgba(169, 107, 249, 0.23);
+    box-shadow: 0 6px 20px rgba(107, 152, 249, 0.23);
 }
 
 .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
@@ -257,8 +257,8 @@ button { font-family: inherit; }
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #f5f3ff; /* Light purple bg */
-    color: #7c3aed; /* Purple text */
+    background: #f3fbff; /* Light purple bg */
+    color: #3a82ed; /* Purple text */
     padding: 6px 16px;
     border-radius: 50px;
     font-size: 0.75rem;
@@ -282,7 +282,7 @@ button { font-family: inherit; }
 
 .text-gradient {
     font-style: italic;
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    background: linear-gradient(135deg, #538fe8 0%, #55e7f7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-right: 10px; /* Prevent italic cut-off */
@@ -392,21 +392,7 @@ button { font-family: inherit; }
     }
 }
 /* Ensure quick-card doesn't wrap and has consistent styling */
-.quick-card {
-    flex-shrink: 0;
-    white-space: nowrap;
-    /* Keep existing styles below */
-    background: white;
-    padding: 1rem 2rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
-    font-weight: 700;
-    color: #6366f1;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid white;
-}
+
 
 .quick-card {
     background: white;
@@ -414,7 +400,7 @@ button { font-family: inherit; }
     border-radius: 16px;
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
     font-weight: 700;
-    color: #6366f1; /* Icon color */
+    color: #5b99c0; /* Icon color */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1301,7 +1287,7 @@ button { font-family: inherit; }
 }
 
 .cta-card {
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); /* Navy to Blue gradient */
+    background: linear-gradient(135deg, #1e5d8a 0%, #3bb2f6 100%); /* Navy to Blue gradient */
     border-radius: 50px; /* Big rounded pill shape */
     padding: 4rem 5rem;
     display: flex;
@@ -1479,7 +1465,7 @@ button { font-family: inherit; }
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #10b981; /* Green text */
+    color: #1089b9; /* Green text */
     font-weight: 600;
     font-size: 0.8rem;
     background: #ecfdf5; /* Light green pill bg */
@@ -1490,10 +1476,10 @@ button { font-family: inherit; }
 .status-dot {
     width: 8px;
     height: 8px;
-    background-color: #10b981;
+    background-color: #1089b9;
     border-radius: 50%;
     display: block;
-    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2); /* Pulse effect ring */
+    box-shadow: 0 0 0 2px rgba(16, 134, 185, 0.2); /* Pulse effect ring */
 }
 
 /* --- Compact Mobile Footer (Grid Layout) --- */
@@ -1658,7 +1644,7 @@ button { font-family: inherit; }
 
 /* Footer Banner */
 .upload-cta-banner {
-    background: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 100%);
+    background: linear-gradient(135deg, #1e5d8a 0%, #3bb2f6 100%);
     border-radius: 20px;
     padding: 3rem;
     display: flex;
@@ -1672,14 +1658,14 @@ button { font-family: inherit; }
 .upload-cta-content h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #1f2937;
+    color: #efefef;
 }
-.upload-cta-content p { color: #4b5563; max-width: 600px; }
+.upload-cta-content p { color: #f1f1f1; max-width: 600px; }
 
 .upload-cta-buttons { display: flex; gap: 1rem; }
 
 .btn-primary-solid {
-    background: #3b82f6;
+    background: #2170ba;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
